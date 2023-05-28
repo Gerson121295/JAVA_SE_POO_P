@@ -1,0 +1,53 @@
+/*
+//Operadores de Asignacion
+    Operador  Aplicacion  Desglose
+        +=      a+= b        a = a+b
+        -=      a-= b        a = a-b
+        *=      a*= b        a = a*b
+        /=      a/= b        a = a/b
+        %=      a%= b        a = a%b
+
+-------------------------------------------------------
+//Operadores de incremento
+    Operador    Nombre      Ejemplo    Desglose
+        ++      incremento      i++     i=i+1
+        --      decremento      i--     i=i-1
+
+-------------------------------------------------------
+
+//Prefijo: ++i    Postfijo:  i++
+
+*/
+
+-------------	Operador Equidad    -----------
+
+	Operador	Nombre		Ejemplo
+	  ==		Igualdad  	a==b
+	  !=		desigualdad	a!=b
+-------------------------------------------------------
+
+
+--------------- Operadores relacionales  --------------
+
+Operador	Nombre			Ejemplo
+  <		Menor que		a<b
+  >		Mayor que		a>b
+  <=		Menor o igual que	a<=b
+  >=		Mayor o igual que	a>=b
+-------------------------------------------------------
+
+
+--------------- Operadores Logicos --------------
+Operador	Nombre	Ejemplo
+  && 		AND	a&&b
+  ||		OR	a||b
+  !		NOT	!a
+-------------------------------------------------------
+
+
+
+
+
+
+
+

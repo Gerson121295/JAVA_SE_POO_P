@@ -1,0 +1,26 @@
+
+pasos para crear el archivo .jar de un proyecto
+
+clic en file
+clic en Project Structure
+clic en Artifacts -> clic en el signo "+" luego
+clien JAR -> clic en from modules with dependencies
+luego en Main Class: "seleccionar el main del proyecto"
+clic en OK
+luego clic en Apply luego en OK.
+
+Luego clic en la pestaña Build -->clic en build Artifacts
+seleccionar la clase creada y clic en build.
+
+Ejecutar el archivo .jar
+
+Abrir CMD y moverse a la ruta del proyecto en out --> artifacts
+y ejecutar el archivo creado.
+
+C:\Users\Hp01\OneDrive\Escritorio\Cursos\Java-Random\JAVASE\HelloWord\out\artifacts
+
+en cmd ejecutar:  java -jar HolaMundo.jar
+
+
+
+

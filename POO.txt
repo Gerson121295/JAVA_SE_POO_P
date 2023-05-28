@@ -1,0 +1,136 @@
+
+	
+*******	Programacion Orientada a Objetos *******
+
+Orientada a Objetos -> Observar los problemas en forma de objetos
+
+La orientada a Objetos tiene estos pilares: Encapsulamiento, Abstraccion, Herencia, Polimorfismo.
+
+Paradigma -> Teoria que suministra la base y modelo para resolver problemas.
+
+Paradigma se compone de estos 4 elementos: Clases, Propiedades, Metodos, Objetos.
+
+--- - Objetos - --- 
+Los objetos son aquellos que tienen propiedades, y comportamientos, 
+pueden ser fisico(se pueden tocar "User - tiene caracteriticas y comportamiento") o 
+conceptuales(viven en nuestra mente, "Session").
+
+-- Propiedades: 
+Tambien pueden llamarse atributos, seran sustantivos(palabras identifica las cosa que conocemos)
+las propiedades puede ser el nombre, tamaño, forma, estado de un elemento de un objeto.
+-- Comportamiento: 
+Son todas las operaciones, acciones del objeto, suelen ser verbos o sustantivo y verbo.
+login(), logout, makeReport().
+
+-- Clase
+Las clases me permitirán generar mas objetos. Son los modelos sobre los cuales construiremos objetos.
+Abstraccion: Analizar objetos para crear clases. 
+la abstraccion permite abstraer la forma del objeto para obtener un molde para despues
+crear mas objetos, para despues agregarle las propiedades y comportamiento que quiera.
+
+
+Cuando ya se tiene una clase un modelo lo suficiente generico que permita obtener mas
+objetos lo siguiente es plasmarlo en un diagrama UML, ya que las clases son el molde 
+el cual tiene atributos y las operaciones del objeto.
+
+Identidad(colorVerde):Nombre de la clase su identificador, nombre debe ser unico.
+Estado(colorVioleta):El estado de la clase cualquier atributo, propiedad, que defina la clase.
+Comportamiento(colorAzul):Los comportamiento o acciones de la clase.
+
+----------------------------
+Nombre Clase (colorVerde)
+----------------------------
+Atributo1(colorVioleta)
+Atributo2(colorVioleta)
+Atributo3(colorVioleta)
+AtributoN(colorVioleta)
+----------------------------
+Operacion 1(colorAzul)
+Operacion 2(colorAzul)
+Operacion 3(colorAzul)
+Operacion N(colorAzul)
+----------------------------
+
+Ejemplo de clase:
+
+-------------------
+	Person
+-------------------
+	name
+------------------
+	walk()
+------------------
+
+
+*** Modularidad ***
+
+Es la posibilidad de subdividir un sistema en varios elementos o componentes para formar 
+el sistema por completo.
+ 
+La modularidad viene del diseño modular, el diseño insdustrial arquitectura.
+
+La POO se compone de la modularidad, y este permite: Reutilizar codigo, evitar colapsos,
+mantenible(añadiendo o quitando), Legibilidad, Resolucion rapida de problemas.
+
+clase: Modularidad, divide el programa en partes o modulos/clases, separar las clase en archivos.
+
+-- Declarando un objeto:
+Doctor  myDoctor;   //Doctor(tipo de objeto), myDoctor(Nombre del objeto)
+
+-- Instanciando un objeto:
+myDoctor = new Doctor(); //myDoctor(Nombre del objeto, new Doctor()(Creando el objeto.
+
+-- Declarando e Instanciando un objeto:
+Doctor  myDoctor = new Doctor();  //Doctor  myDoctor (declarando el objeto), = new Doctor();(instanciando/creando el objeto)
+
+-- Utilizando el objeto
+Doctor  myDoctor = new Doctor();
+myDoctor.name = "Alejandro Lopez";
+myDoctor.showName();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
