@@ -75,7 +75,7 @@ mantenible(añadiendo o quitando), Legibilidad, Resolucion rapida de problemas.
 clase: Modularidad, divide el programa en partes o modulos/clases, separar las clase en archivos.
 
 -- Declarando un objeto:
-Doctor  myDoctor;   //Doctor(tipo de objeto), myDoctor(Nombre del objeto)
+Doctor  myDoctor;   //Doctor(tipo de objeto o nombre de la clase), myDoctor(Nombre del objeto)
 
 -- Instanciando un objeto:
 myDoctor = new Doctor(); //myDoctor(Nombre del objeto, new Doctor()(Creando el objeto.
@@ -83,10 +83,63 @@ myDoctor = new Doctor(); //myDoctor(Nombre del objeto, new Doctor()(Creando el o
 -- Declarando e Instanciando un objeto:
 Doctor  myDoctor = new Doctor();  //Doctor  myDoctor (declarando el objeto), = new Doctor();(instanciando/creando el objeto)
 
--- Utilizando el objeto
+-- Utilizando el objeto (en el main)
 Doctor  myDoctor = new Doctor();
 myDoctor.name = "Alejandro Lopez";
 myDoctor.showName();
+
+Una clase no es un objeto -
+-- Metodo Constructor -- 
+  //Cuando queremos llamar a los metodos siempre se usa parentesis
+ //new Doctor(); //El metodo constructor siempre va despues de la palabra reservada new,
+y va a usar el nombre de la clase seguido de parentesis
+
+myDoctor = new Doctor();
+
+ ** Metodo constructor
+- Crea nuevas instancias de una clase
+- Tiene el mismo nombre que la clase que inicializa.
+- Usa la palabra reservada new
+Usa cero o mas argumentos contenidos dentro de los parentesis que siguen el nombre. 
+No regresa un valor
+
+-- Metodo Static
+- Se puede usar en toda la clase
+- Esta definido por la palabra reservada static.
+
+Los metodos static pueden ser accesados indicando el nombre de la clase, la notacion
+punto y el nombre del metodo. Se invoca en una clase que no tiene instancias de la clase.
+
+public class Calculadora{
+public static int suma(int a, int b){
+return a+b;
+}
+calculadora.suma(5,2);
+
+Mienbros static:
+
+	public class Calculadora{
+		public static final double PI = 3.1416;
+		public static int valor = 0;
+	}
+	Calculadora.PI;
+	Calculadora.valor;
+
+
+Mienbros static:
+import static com.anncode.operaciones.Calculadora.*
+import static java.lang.Math.*;
+
+public class Principal{
+	public static void main(String[] args){
+		System.out.println(suma(3,5));
+		System.out.println(PI);
+	}
+}
+
+C8---------------------------- --------------------------
+
+
 
 
 
