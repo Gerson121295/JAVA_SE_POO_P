@@ -12,6 +12,11 @@ public class UIMenu {
 
     //Si se decide import se debe agregar dentro de una carpeta y el metodo debe ser public
 
+    //Estos meses podran ser accedidos desde cualquier lugar o clase xq esta definida como static.
+    //Para declar una variable constante(su variable nunca va a cambiar) en Java se usa la palabra reservada: Final (para variables que no cambien por ejemplo los meses) public static final String[] MONTHS
+    public static String[] MONTHS= {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+                                     "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+
     public static void showMenu(){
         System.out.println("Welcome to My Appointments");
         System.out.println("Selecciona la opcion deseada");
@@ -60,6 +65,11 @@ public class UIMenu {
             switch (response){
                 case 1:
                     System.out.println("::Book an appointment");
+                    //Metodo para que imprima unicamente los primeros 3 meses
+                    for (int i = 1; i < 4; i++){
+                        System.out.println(i + ". "+MONTHS[i]);
+                    }
+                    
                     break;
                 case 2:
                     System.out.println("::My appointments");

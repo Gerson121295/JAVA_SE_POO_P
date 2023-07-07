@@ -12,7 +12,7 @@ public class Main {
         //Cuando queremos llamar a los metodos siempre se usa parentesis
         //new Doctor(); //El metodo constructor siempre va despues de la palabra reservada new,
         //y va a usar el nombre de la clase seguido de parentesis
-
+/*
         Doctor myDoctor = new Doctor();
         //Doctor myDoctor = new Doctor("Gerson Ep"); // otra forma se envia un argumento name
         myDoctor.name = "Alejandro Rodriguez"; //asignando el nombre al doctor
@@ -27,6 +27,8 @@ public class Main {
         myDoctorAnn.showName();
         myDoctorAnn.showId(); // obtener id forma 1
         System.out.println(Doctor.id); // obtener id forma 2
+*/
+
 
     // LLamado del metodo showMenu de la clase ui.UIMenu otra forma es importar la
         // clase y solo escribir el metodo showMenu();
