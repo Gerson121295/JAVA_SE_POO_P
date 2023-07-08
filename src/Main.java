@@ -29,12 +29,20 @@ public class Main {
         System.out.println(Doctor.id); // obtener id forma 2
 */
 
+        /*// Ejemplo utilizando el constructor Doctor que requiere envio de argumentos
+        Doctor myDoctor = new Doctor("Anahi Salgado", "Pediatria");
+        System.out.println(myDoctor.name);
+        System.out.println(myDoctor.speciality);
+         */
+
 
     // LLamado del metodo showMenu de la clase ui.UIMenu otra forma es importar la
         // clase y solo escribir el metodo showMenu();
          //UIMenu.showMenu(); //Sin Importar la clase, La clase no estaba dentro de la carpeta ui.
 
-        showMenu();
+        //showMenu();
+
+
 
     }
 

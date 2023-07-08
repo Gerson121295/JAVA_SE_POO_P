@@ -127,17 +127,17 @@ Mienbros static:
 
 
 Mienbros static:
-import static com.anncode.operaciones.Calculadora.*
+import static com.anncode.operaciones.Calculadora.*  // -- importar la clase
 import static java.lang.Math.*;
 
 public class Principal{
 	public static void main(String[] args){
-		System.out.println(suma(3,5));
+		System.out.println(suma(3,5));  // Usar el metodo suma de la clase calculadora.
 		System.out.println(PI);
 	}
 }
 
-C8---------------------------- --------------------------
+C10---------------------------- --------------------------
 
 
 

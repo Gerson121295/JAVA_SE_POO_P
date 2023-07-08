@@ -8,11 +8,15 @@ public class Doctor {
 
     Doctor(){ //opcional: al llamar el metodo Doctor() se ejecuta lo sig.
         System.out.println("COnstruyendo el objeto Doctor");
-        id++; // aumenta el id del doctor al crear un constructor.
+
     }
 
-    Doctor(String name){ //Opcional agregarle un parametro
+    Doctor(String name, String speciality){ //Opcional agregarle un parametro
         System.out.println("El nombre del doctor asignado es: "+name);
+        id++; // aumenta el id del doctor al crear un constructor.
+        //this hace referencia a los elementos de la clase
+        this.name = name; //este es igual al nombre de la variable del constructor Doctor.
+        this.speciality = speciality;
     }
 
     /**
