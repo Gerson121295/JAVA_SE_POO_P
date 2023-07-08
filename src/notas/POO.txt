@@ -137,12 +137,16 @@ public class Principal{
 	}
 }
 
-C10---------------------------- --------------------------
+C11---------Encapsulamiento modificadores de acceso --------------------------
 
+si = permite el acceso de modificar, no= no permite el acceso de modificar
 
-
-
-
+ Modificador |  Clase | Package |  Subclase  | Otros |
+ Public		 si        si         si        si
+ Protected	 si	   si         si	no
+ default	 si	   si  	      no	no
+ private	 si	   no	      no	no	//un nivel de acceso al parametro dentro de la clase.
+-------------------------------------------------------
 
 
 

@@ -4,6 +4,7 @@ public class Doctor {
      */
    static int id = 0; // Autoincrement la variable debe ser estatica para poder llevar el control de autoincremento.
     String name;
+    String email;
     String speciality;
 
     Doctor(){ //opcional: al llamar el metodo Doctor() se ejecuta lo sig.

@@ -42,6 +42,9 @@ public class Main {
 
         //showMenu();
 
+        Patient patient = new Patient("Alejandra", "ale@gmail.com");
+     
+
 
 
     }
