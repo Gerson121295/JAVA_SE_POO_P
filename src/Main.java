@@ -43,10 +43,11 @@ public class Main {
         //showMenu();
 
         Patient patient = new Patient("Alejandra", "ale@gmail.com");
-     
+        patient.setWeight(54.6);
+        System.out.println(patient.getWeight());
 
-
-
+        patient.setPhoneNumber("45667896");
+        System.out.println(patient.getPhoneNumber());
     }
 
 

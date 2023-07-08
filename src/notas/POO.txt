@@ -148,6 +148,16 @@ si = permite el acceso de modificar, no= no permite el acceso de modificar
  private	 si	   no	      no	no	//un nivel de acceso al parametro dentro de la clase.
 -------------------------------------------------------
 
+C12
+
+    // Metodos Getters (Obtener dato) y Setters(asignar o modificar dato):
+    // Leer/Escribir especificamente los valores de las variables miembro.
+    // Como ya las variables estan encapsuladas(private) no se pueden editar, por lo que
+    //para ingresar o modificar será utilizando los metodos getters y setters.
+    // Los getter y setter no ayudan a validar y mantener la consistencia en la logica del negocio en nuestros modelos o clases.
+
+
+
 
 
 
