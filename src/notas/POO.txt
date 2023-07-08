@@ -156,6 +156,78 @@ C12
     //para ingresar o modificar será utilizando los metodos getters y setters.
     // Los getter y setter no ayudan a validar y mantener la consistencia en la logica del negocio en nuestros modelos o clases.
 
+C13
+		Variables ≠ Objetos
+Variables son entidades elementales(muy sencillas).
+*Un número
+*Un caractér
+*Un valor verdadero falso
+
+Objetos son entidades complejas que pueden estar formadas por la agrupacion de muchas
+variables y metodos.
+
+Clases Wrapper/Objeto Primitivo
+Byte, Short, Integer, Long, Float, Double, Character, Boolean, String.
+
+C14
+	Clases Anidadas
+Una clase anidada es una clase dentro de otra clase.
+
+class ClaseExterior {
+	class ClaseAnidada {
+	}
+}
+
+
+			 Clases Anidadas(2 tipos)
+			  /		\
+		    clase Internas	Clases estáticas anidadas
+			/	\
+Clases Locales a un método	Clases Internas anónimas
+
+
+
+
+class ClaseExterior {
+	static class ClaseStaticaAnidada {
+	}
+	class claseInterna{
+	}
+}
+
+Clases estaticas: 
+* No se necesitan crear instancias para llamarlas.
+* Solo se pueden llamar a los métodos estáticos.
+
+Clases anidadas
+* Anidadas pueden llamar a cualquier tipo de elemento metodo.
+- Clases helper 
+- Agrupadas por lógica 
+- Encapsulación
+
+
+Ejemplo:
+
+	public class Enclosing{
+		private static int x = 1;
+
+		public static class StaticNested{
+			private void run(){
+				//Implementacion
+			}	
+		}
+	}
+
+//implementacion de la clase estatica
+	
+	public class Main {
+	public static void main(String[] args){
+		Enclosing.StaticNested nested = Enclosing.StaticNested();
+		nested.run();
+	}	
+	}
+
+
 
 
 

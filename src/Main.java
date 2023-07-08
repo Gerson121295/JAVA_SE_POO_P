@@ -1,3 +1,4 @@
+import java.util.Date;
 import java.util.Scanner;
 
 import static ui.UIMenu.*;
@@ -41,6 +42,24 @@ public class Main {
          //UIMenu.showMenu(); //Sin Importar la clase, La clase no estaba dentro de la carpeta ui.
 
         //showMenu();
+
+        Doctor myDoctor = new Doctor("Anahi Salgado", "Pediatria");
+        myDoctor.addAvailableAppointment(new Date(), "4pm");
+        myDoctor.addAvailableAppointment(new Date(), "10am");
+        myDoctor.addAvailableAppointment(new Date(), "1pm");
+
+        System.out.println(myDoctor.getAvailableAppointments()); //lista de objetos.
+
+        //Llamar una clase statica: contiene las citas del doctor
+        for (Doctor.AvailableAppointment availableAppointment:
+                myDoctor.getAvailableAppointments()) {
+            System.out.println(availableAppointment.getDate() + " "
+            + availableAppointment.getTime()
+            );
+        }
+
+
+        System.out.println("----------------------------\n\n");
 
         Patient patient = new Patient("Alejandra", "ale@gmail.com");
         patient.setWeight(54.6);
