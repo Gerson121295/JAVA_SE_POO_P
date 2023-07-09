@@ -1,41 +1,64 @@
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Doctor {
+public class Doctor extends User{
     /** Atributos
      *
      */
+
+    /* // No se necesita estos atributos ya que heredan(extends) de la clase padre User
    static int id = 0; // Autoincrement la variable debe ser estatica para poder llevar el control de autoincremento.
     private String name;
     private String email;
-    private String speciality;
+    private String address;
+    private String phoneNumber;
+    */
+
+    private String speciality; //Atributo unico del doctor
 
 
-
+/*// Ya no se utiliza constuctor vacio
     Doctor(){ //opcional: al llamar el metodo Doctor() se ejecuta lo sig.
         System.out.println("COnstruyendo el objeto Doctor");
+    }
+    */
 
+    Doctor(String name, String email){ //Opcional agregarle un parametro
+        super(name, email); //Super hace referencia a la clase padre,
+
+        System.out.println("El nombre del doctor asignado es: "+name);
+       // id++; // aumenta el id del doctor al crear un constructor. // ya no se necesita se realizará por medio de una BD el aumento del id.
+
+        //this hace referencia a los elementos de la clase
+        //this.name = name; //este es igual al nombre de la variable del constructor Doctor. // ya esta name definido en esta clase por lo que no se usa.
+        this.speciality = speciality;
     }
 
-    Doctor(String name, String speciality){ //Opcional agregarle un parametro
-        System.out.println("El nombre del doctor asignado es: "+name);
-        id++; // aumenta el id del doctor al crear un constructor.
-        //this hace referencia a los elementos de la clase
-        this.name = name; //este es igual al nombre de la variable del constructor Doctor.
+    //Getters and Setters
+    public String getSpeciality() {
+        return speciality;
+    }
+
+    public void setSpeciality(String speciality) {
         this.speciality = speciality;
     }
 
     /**
      * Comportamientos
      */
+  /* // Ya no se usa estos metodos.  name, id no esta definido en esta clase.
     public void showName(){ //Nombre del doctor
         System.out.println(name);
     }
     public void showId(){
         System.out.println("ID Doctor: "+ id);
     }
+*/
 
 
+
+
+    //Array de citas.
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
     public void addAvailableAppointment(Date date, String time){ //metodo para añadir muchas citas.
         availableAppointments.add(new Doctor.AvailableAppointment(date,time));
@@ -52,6 +75,8 @@ public class Doctor {
         private int id;
         private Date date;
         private String time;
+        private String address;
+        private String phoneNumber;
 
         // Constructor
         public AvailableAppointment(Date date, String time) {
@@ -61,6 +86,7 @@ public class Doctor {
 
 
         //Getters and Setters
+
         public int getId() {
             return id;
         }

@@ -229,6 +229,87 @@ Ejemplo:
 
 
 
+Clases Internas:
+	
+	public class Outer {
+		public class Inner {
+		}
+	}
+
+	public class Main {
+		public static void main(String[] args){
+			Outer outer = new Outer();  // instanciar para tener acceso
+			Outer.Inner inner = outer new Inner();
+		}
+	}
+
+
+
+	** Clases Locales a un Método
+
+	public class Enclosing {
+		void run(){
+			class Local{
+				void run(){
+				}
+		}
+
+		Local local = new Local();
+		local.run();
+		}
+	}
+
+
+	public class Main{
+		public static void main(String[] args){
+			Enclosing enclosing = new Enclosing();
+			enclosing.run();
+		}
+	}
+
+
+C16 ¿Que es la herencia? Don´t repeat yourself
+
+	DRY: Don´t repeat yourself
+*Promueve la reduccion de duplicacion en programación.
+*Las piezas de informacion nunca deben duplicarse.
+*Incrementa la dificultad en los cambios y evolucion.
+	
+
+//Herencia: Crearemos nuevas clases a partir de otras.
+En la herencia se establece una relacion padre e hijo.
+
+   SuperClase  <--Clase abstracta - Clase de arriba(clase padre)
+	|
+    SubClase   <--Hereda de la superclase -  Clase de abajo(clase hijo)
+	
+En la herencia se crea una nueva abstraccion del analisis de 2 moldes
+osea una nueva abstraccion de la abstraccion que se habia hecho anterior.
+
+
+C17: Super y This
+
+Herencia: Crear una abstraccion de la abstraccion.
+
+//Super class 
+	public class User{
+	}
+//Subclase
+	public class Patient extends User{
+	}
+
+
+//Super y This
+Super: Indica que una variable o un método es de la clase padre(superclase).
+Super es decir que estoy utilizando herencia. Cuando haga super en la clase hija me
+estaré refiriendo a la superclase.
+this: Permite especificar que la variable que esta señalando(this.nombreVariable) es
+de la misma clase en la que se usa.
+Donde quiera que utilice this me voy a referir a la clase donde estoy ubicado.
+
+
+
+
 
 
 
