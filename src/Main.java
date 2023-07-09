@@ -43,13 +43,16 @@ public class Main {
 
         //showMenu();
 
-        Doctor myDoctor = new Doctor("Anahi Salgado", "Pediatria");
+        Doctor myDoctor = new Doctor("Anahi Salgado", "Anahi@gmail.com");
         myDoctor.addAvailableAppointment(new Date(), "4pm");
         myDoctor.addAvailableAppointment(new Date(), "10am");
         myDoctor.addAvailableAppointment(new Date(), "1pm");
 
         System.out.println(myDoctor.getAvailableAppointments()); //lista de objetos.
 
+        System.out.println(myDoctor);
+
+        /*// Se comento debido a que ahora traera las citas por medio del toString ya que se modifico en la clase.
         //Llamar una clase statica: contiene las citas del doctor
         for (Doctor.AvailableAppointment availableAppointment:
                 myDoctor.getAvailableAppointments()) {
@@ -57,7 +60,7 @@ public class Main {
             + availableAppointment.getTime()
             );
         }
-
+        */
 
         System.out.println("----------------------------\n\n");
 

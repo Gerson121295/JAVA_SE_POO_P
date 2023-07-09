@@ -56,8 +56,6 @@ public class Doctor extends User{
 */
 
 
-
-
     //Array de citas.
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
     public void addAvailableAppointment(Date date, String time){ //metodo para añadir muchas citas.
@@ -69,6 +67,13 @@ public class Doctor extends User{
         return availableAppointments;
     }
 
+
+    //Sobreescribiendo el metodo toString
+    @Override
+    public String toString() {
+        return super.toString() +"\n Speciality: "+speciality+ "\nAvailable: "+ //dejar el super.toString() permite reutilizar la funcionalidad de la clase padre
+                                availableAppointments;
+    }
 
     // Clase estatica: Un doctor puede tener muchas citas disponibles
     public static class AvailableAppointment{ //Available Appointment -- Cita disponible
@@ -111,8 +116,13 @@ public class Doctor extends User{
             this.time = time;
         }
 
-    }
 
+        //Sobreescribir el metodo toString
+        @Override
+        public String toString() {
+            return "Available Appointments \nDate: "+date+ "\nTime: "+time;
+        }
+    }
 
 }
 

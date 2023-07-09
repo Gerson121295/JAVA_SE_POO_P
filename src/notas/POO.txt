@@ -323,10 +323,19 @@ de la superclase con argumentos diferentes.
 //Sobreescritura de metodo puedo añadir otras funcionalidades o quitar funcionalidades del metodo padre
 en el hijo.
 
+//El metodo toString proviene de la clase object cuando creamos una clase o un objeto sera tipo object
+y esa clase estará heredando automaticamente de la clase object.
+
+C19 - Polimorfismo Sobreescribiendo el método toString.
+Polimorfismo: Posibilidad de sobreescribir un método con comportamientos diferentes.
+
+Poli=muchos
+morfismo=formas
+ Esto significa muchas formas a una sola cosa a un solo metodo se le da muchas formas.
 
 
 
-
+C20 - 
 
 
 
