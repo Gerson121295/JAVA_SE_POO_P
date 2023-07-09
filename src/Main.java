@@ -62,11 +62,45 @@ public class Main {
         System.out.println("----------------------------\n\n");
 
         Patient patient = new Patient("Alejandra", "ale@gmail.com");
+        System.out.println(patient);// al imprimir el patient trae el toString que se definio en la clase User.
+
+
+
+
+
+
+
+
+        /*//Ejemplos
+        Patient patient = new Patient("Alejandra", "ale@gmail.com");
+        Patient patient2 = new Patient("Alejandro", "alo@gmail.com");
+
+        System.out.println(patient.getName());
+        System.out.println(patient2.getName());
+        patient2 = patient;
+
+        System.out.println("---------");
+        System.out.println(patient.getName());
+        System.out.println(patient2.getName());
+        System.out.println("---------");
+        patient2.setName("Manuel");
+        System.out.println(patient.getName());
+        System.out.println(patient2.getName());
+
+
+        System.out.println("---------");
         patient.setWeight(54.6);
         System.out.println(patient.getWeight());
 
         patient.setPhoneNumber("45667896");
         System.out.println(patient.getPhoneNumber());
+
+        System.out.println();
+        */
+
+
+
+
     }
 
 

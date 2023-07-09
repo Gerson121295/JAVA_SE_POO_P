@@ -62,7 +62,11 @@ public class Patient extends User {
         this.blood = blood;
     }
 
-
+    @Override //Sobreescribir el metodo toString de la clase padre que ya estaba escrito. //El resultado sera: resultado del padre mas el del hijo.
+    public String toString() {
+        return super.toString() + "\nAge: "+birthday+"\nWeight: "+getWeight()+
+                "\nHeight "+getHeight()+ "\nBlood "+blood;
+    }
 }
 
 

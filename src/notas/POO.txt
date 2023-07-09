@@ -308,9 +308,20 @@ de la misma clase en la que se usa.
 Donde quiera que utilice this me voy a referir a la clase donde estoy ubicado.
 
 
+C18 - Polimorfismo Sobreescritura de metodos
+En  java no se permite hacer la herencia multiple, una clase hija no puede tener 2 papas.
 
+Sobreescritura: Cuando una clase hereda de otra y en esta clase hija se redefine un 
+método con una implementacion distinta a la de la clase padre.
 
+Finally algo que es constante, no va a cambiar. Puede definirse un metodo o una clase.
+Static para hacerlo global.
 
+Sobreescritura de Constructores: Un constructor en una subclase usando los miembros heredados
+de la superclase con argumentos diferentes.
+
+//Sobreescritura de metodo puedo añadir otras funcionalidades o quitar funcionalidades del metodo padre
+en el hijo.
 
 
 
