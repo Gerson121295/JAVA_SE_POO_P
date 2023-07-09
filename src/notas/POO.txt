@@ -335,20 +335,79 @@ morfismo=formas
 
 
 
-C20 - 
+C20 - Interfaces
+
+Lo que llevamos:
+
+			User(clase padre)			
+		-----------------------------------
+			id: int					
+			name: String				
+			email: String				
+			address: String				
+			phoneNumber: String			
+		------------------------------------
+			getters
+			Setters
+		------------------------------------
+		/(hereda)      \(hereda)		\(hereda)
+	       /		\			 \
+	Doctor(class hija)	Patient(class hija)		Nurse(class hija)
+---------------------- 		--------------------    ---------------------------    
+speciality : String		birthday : String		speciality : String
+----------------------		weight	: String	---------------------------
+getters				height  : String		getters
+Setters				blood	: String		Setters
+----------------------		------------------- 	---------------------------
+	|			getters				   |
+	|			Setters				   |
+	|			-------------------		   |
+	|				|	|		   |
+	|				|	|		   |
+	|				|	|		   |
+	|				|	|		   |
+	|_______________________________|	|		   |
+			|			|		   |
+			|			|__________________|
+			|				   |
+	________________|________________	___________|________		   
+		AppointmentDoctor
+(maneja citas entre el doc y el pacient)	AppointmentNurse(maneja cita entre Nurse y pacient)
+		------------------------	------------------------
+		id int				id int
+		patient: Patient		patient: Patient
+		doctor: Doctor			nurse: Nurse
+		date: Date			date: Date
+		time: String			time: String
+		------------------------	------------------------
+		getters				getters
+		Setters				Setters
+		------------------------	------------------------
+
+-- Las Interfaces:
+Es un tipo de referencia similar a una clase que podria contener solo constantes 
+y definiciones de metodos.
+
+Se establece la forma de una clase(nombres de metodos, listas de argumentos
+y tipos de retorno, pero no bloques de codigo).
+Solo debe tener la redaccion de metodos.
+
+El nombre de una interfaz debe estar vinculado a una actividad o a una accion.
+
+Interfaces:
+
+	public interface ISchedulable {
+		schedule(Date date, String Time);
+	}
+
+//usar la interface se utiliza implements se utiliza con incial I(interface) la interfaz
+	public class AppointmentDoctor implements ISchedulable{
+	}
+
+Una particularidad de las interfaces es que si se pueden implementar varias al mismo tiempo.
 
 
-
-
-
-
-
-
-
-
-
-
-
+C21- 
 
 
 
