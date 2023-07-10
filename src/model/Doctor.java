@@ -1,12 +1,14 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Doctor extends User{
+public class Doctor extends User {
     /** Atributos
      *
      */
 
-    /* // No se necesita estos atributos ya que heredan(extends) de la clase padre User
+    /* // No se necesita estos atributos ya que heredan(extends) de la clase padre model.User
    static int id = 0; // Autoincrement la variable debe ser estatica para poder llevar el control de autoincremento.
     private String name;
     private String email;
@@ -18,19 +20,19 @@ public class Doctor extends User{
 
 
 /*// Ya no se utiliza constuctor vacio
-    Doctor(){ //opcional: al llamar el metodo Doctor() se ejecuta lo sig.
-        System.out.println("COnstruyendo el objeto Doctor");
+    model.Doctor(){ //opcional: al llamar el metodo model.Doctor() se ejecuta lo sig.
+        System.out.println("COnstruyendo el objeto model.Doctor");
     }
     */
 
-    Doctor(String name, String email){ //Opcional agregarle un parametro
+    public Doctor(String name, String email){ //Opcional agregarle un parametro
         super(name, email); //Super hace referencia a la clase padre,
 
         System.out.println("El nombre del doctor asignado es: "+name);
        // id++; // aumenta el id del doctor al crear un constructor. // ya no se necesita se realizará por medio de una BD el aumento del id.
 
         //this hace referencia a los elementos de la clase
-        //this.name = name; //este es igual al nombre de la variable del constructor Doctor. // ya esta name definido en esta clase por lo que no se usa.
+        //this.name = name; //este es igual al nombre de la variable del constructor model.Doctor. // ya esta name definido en esta clase por lo que no se usa.
         this.speciality = speciality;
     }
 
@@ -51,7 +53,7 @@ public class Doctor extends User{
         System.out.println(name);
     }
     public void showId(){
-        System.out.println("ID Doctor: "+ id);
+        System.out.println("ID model.Doctor: "+ id);
     }
 */
 

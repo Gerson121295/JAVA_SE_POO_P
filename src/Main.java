@@ -1,37 +1,37 @@
-import java.util.Date;
-import java.util.Scanner;
+import model.Doctor;
+import model.Patient;
 
-import static ui.UIMenu.*;
+import java.util.Date;
 
 public class Main {
 
     public static void main(String[] args) {
         //Creacion del objeto
-         //Doctor= nombre de la clase
+         //model.Doctor= nombre de la clase
         // myDoctor = Nombre del obejto
-        //New Doctor(); = la instanciacion - creando el objeto
+        //New model.Doctor(); = la instanciacion - creando el objeto
         //Cuando queremos llamar a los metodos siempre se usa parentesis
-        //new Doctor(); //El metodo constructor siempre va despues de la palabra reservada new,
+        //new model.Doctor(); //El metodo constructor siempre va despues de la palabra reservada new,
         //y va a usar el nombre de la clase seguido de parentesis
 /*
-        Doctor myDoctor = new Doctor();
-        //Doctor myDoctor = new Doctor("Gerson Ep"); // otra forma se envia un argumento name
+        model.Doctor myDoctor = new model.Doctor();
+        //model.Doctor myDoctor = new model.Doctor("Gerson Ep"); // otra forma se envia un argumento name
         myDoctor.name = "Alejandro Rodriguez"; //asignando el nombre al doctor
         myDoctor.showName();
         myDoctor.showId(); // obtener id forma 1
-        System.out.println(Doctor.id); // obtener id forma 2
+        System.out.println(model.Doctor.id); // obtener id forma 2
 
-        Doctor.id++; //Aumtamos en 1 para eso la variable debe ser estatica.
+        model.Doctor.id++; //Aumtamos en 1 para eso la variable debe ser estatica.
 
-        Doctor myDoctorAnn = new Doctor();
+        model.Doctor myDoctorAnn = new model.Doctor();
         myDoctorAnn.name = "Ann";
         myDoctorAnn.showName();
         myDoctorAnn.showId(); // obtener id forma 1
-        System.out.println(Doctor.id); // obtener id forma 2
+        System.out.println(model.Doctor.id); // obtener id forma 2
 */
 
-        /*// Ejemplo utilizando el constructor Doctor que requiere envio de argumentos
-        Doctor myDoctor = new Doctor("Anahi Salgado", "Pediatria");
+        /*// Ejemplo utilizando el constructor model.Doctor que requiere envio de argumentos
+        model.Doctor myDoctor = new model.Doctor("Anahi Salgado", "Pediatria");
         System.out.println(myDoctor.name);
         System.out.println(myDoctor.speciality);
          */
@@ -54,7 +54,7 @@ public class Main {
 
         /*// Se comento debido a que ahora traera las citas por medio del toString ya que se modifico en la clase.
         //Llamar una clase statica: contiene las citas del doctor
-        for (Doctor.AvailableAppointment availableAppointment:
+        for (model.Doctor.AvailableAppointment availableAppointment:
                 myDoctor.getAvailableAppointments()) {
             System.out.println(availableAppointment.getDate() + " "
             + availableAppointment.getTime()
@@ -65,7 +65,7 @@ public class Main {
         System.out.println("----------------------------\n\n");
 
         Patient patient = new Patient("Alejandra", "ale@gmail.com");
-        System.out.println(patient);// al imprimir el patient trae el toString que se definio en la clase User.
+        System.out.println(patient);// al imprimir el patient trae el toString que se definio en la clase model.User.
 
 
 
@@ -75,8 +75,8 @@ public class Main {
 
 
         /*//Ejemplos
-        Patient patient = new Patient("Alejandra", "ale@gmail.com");
-        Patient patient2 = new Patient("Alejandro", "alo@gmail.com");
+        model.Patient patient = new model.Patient("Alejandra", "ale@gmail.com");
+        model.Patient patient2 = new model.Patient("Alejandro", "alo@gmail.com");
 
         System.out.println(patient.getName());
         System.out.println(patient2.getName());

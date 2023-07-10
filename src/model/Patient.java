@@ -1,6 +1,8 @@
+package model;
+
 public class Patient extends User {
     //Atributos
-   /* //No se necesita estos atributos ya que heredan(extends) de la clase padre User
+   /* //No se necesita estos atributos ya que heredan(extends) de la clase padre model.User
     int id;
     private String name; // encapsular o esconder se hace agregando modificador de acceso como: private para que solo dentro de la clase pueda tener acceso.
     private String email;

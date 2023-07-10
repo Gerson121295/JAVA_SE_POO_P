@@ -337,7 +337,12 @@ morfismo=formas
 
 C20 - Interfaces
 
+Diagrama: 
+https://lucid.app/lucidchart/a2c34ced-1f98-4823-8672-72d3625eb8c9/edit?invitationId=inv_8820f20a-e343-4e71-a0f5-314a1e68b9d5&page=0_0#
+
+
 Lo que llevamos:
+
 
 			User(clase padre)			
 		-----------------------------------
@@ -383,6 +388,18 @@ Setters				blood	: String		Setters
 		getters				getters
 		Setters				Setters
 		------------------------	------------------------
+				|		|
+				|		|
+				|		|
+			-----------------------------
+				ISchedulable(interfaz)
+			-----------------------------
+
+			------------------------------
+
+			schedule(Date date, String time)
+			--------------------------------
+
 
 -- Las Interfaces:
 Es un tipo de referencia similar a una clase que podria contener solo constantes 
@@ -407,7 +424,13 @@ Interfaces:
 Una particularidad de las interfaces es que si se pueden implementar varias al mismo tiempo.
 
 
-C21- 
+C21- Creando una interfaz para definir si una fecha es agendable
+
+Interfaces: Detectar comportamientos que se pueden reutilizar en diferentes familias o 
+diferentes clases es ahi donde podemos aprovechar el comportamiento de las interfaces para
+abstraer esos comportamientos y aplicar el concepto de composicion, de estar componiendo 
+nuestras clases tantas veces se necesiten.
+
 
 
 

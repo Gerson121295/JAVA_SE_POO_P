@@ -1,3 +1,5 @@
+package model;
+
 public class User {
     private int id;
     private String name;
@@ -59,9 +61,9 @@ public class User {
         }
     }
 
-    @Override // indica que este metodo no es propio de la clase User es un metodo de la clase Object(por default lo trae java) es un metodo que esta siendo extraido de la superClase(clase padre).
+    @Override // indica que este metodo no es propio de la clase model.User es un metodo de la clase Object(por default lo trae java) es un metodo que esta siendo extraido de la superClase(clase padre).
     public String toString() {
-        return "User: "+ name +", Email: "+email+
+        return "model.User: "+ name +", Email: "+email+
                 "\nAddress: "+address+". Phone: "+phoneNumber;
     }
 }
