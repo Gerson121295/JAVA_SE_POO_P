@@ -59,7 +59,7 @@ public class Main {
         User userPa = new Patient("Sara", "sar@gmail.com");
         userPa.showDataUser();
 
-        //------------------------Clases Anonimas -------------------------------------------------
+        //------------------------Ejemplos de caso de uso de Clases Anonimas -------------------------------------------------
 
         //Instanciar la clase abstracta User por medio de una clase anonima. Ya que una clase definica como abstrac no se puede instanciar.
         System.out.println("----Instanciando una clase anonima");

@@ -481,7 +481,53 @@ abstracta.
 Las clases anonimas es lo mismo que clases abstractas, las clases anonimas son una forma de
 instanciar clases abstractas.
 
- 
+
+C26 - Interfaces en Java 8 y 9.
+
+Interfaces
+- Metodos Abstractos (todos sus metodos deben ser abstract)
+- Campos constantes 
+- Tipo de referencia
+- Polimorfismo similar Clases
+- Abstractas
+
+Java 8 default metodo de modificador
+Java 9 private metodo de modificador
+
+ - Ahora podemos tener implementacion en métodos de nuestras interfaces.
+Modificadores de acceso de los metodos en las interfaces.
+
+si = permite el acceso de modificar, no= no permite el acceso de modificar
+
+ Modificador |  Clase | Package |  Subclase  | Otros |
+ Public		 si        si         si        si
+ Protected	 si	   si         si	no
+ default	 si	   si  	      no	no
+ private	 si	   no	      no	no	//un nivel de acceso al metodo dentro de la clase.
+-------------------------------------------------------
+
+
+C27 - Simulando Autenticacion de usuarios.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
