@@ -1,6 +1,6 @@
 package model;
 
-public class User {
+public abstract class User { //se agrego abstract para definir User como clase abstracta
     private int id;
     private String name;
     private String email;

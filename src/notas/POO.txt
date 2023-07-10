@@ -431,15 +431,31 @@ diferentes clases es ahi donde podemos aprovechar el comportamiento de las inter
 abstraer esos comportamientos y aplicar el concepto de composicion, de estar componiendo 
 nuestras clases tantas veces se necesiten.
 
+C22 - Clases Abstractas
 
+Polimorfismo:
+Herencia Clases
+Métodos sobreescritos
+Muchas formas.
 
+En las interfaces: 
+- A veces no necesitamos implementar todos los métodos.
 
+Herencia: 
+- Las clases podrian no necesitar heredar la implementacion de un método.
+- A veces no necesitamos crear instancias de una clase padre, ya que es muy genérica.
 
+Las clases abstractas: Es una combinacion de interfaces y herencias.
+ - Nos ayuda a solucionar los problemas que tienen las interfaces de que en las clases 
+   donde se implementa una interfaz se tiene que implementar todos los metodos.
+ - Y en la herencia puedo crear una instancia de la clase padre.
 
+Clase abstracta:
+- No implementa todos los métodos(podemos definir que metodos son obligatorios implementar y que no.
+- No crearemos instancias(No es necesario crear instancias, no podemos crear objetos de esta clase).
+  No podemos crear instancias de una clase abstracta.
 
-
-
-
+	public abstract class Figura{   }
 
 
 
