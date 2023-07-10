@@ -472,6 +472,16 @@ solamente podremos crear objeto de las clases hijos que heredan de su clase abst
 
 //Los metodos definidos con abstractas son obligatorios implementarlos en las clases hijas.
    
+Una clase abstracta no se puede instanciar(crear objetos)solo se puede pero usando las
+clases hijas.
+Existe un hack para instanciar una clase abstracta sin usar una clase hija, aunque no
+será duradero el cambio su ciclo de vida será corto, solo para ese momento en el que se
+realize. Para hacerlo se utiliza las clases anonimas o darle una forma anonima a esa clase
+abstracta.
+Las clases anonimas es lo mismo que clases abstractas, las clases anonimas son una forma de
+instanciar clases abstractas.
+
+ 
 
 
 

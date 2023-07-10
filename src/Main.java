@@ -1,6 +1,4 @@
-import model.Doctor;
-import model.Patient;
-import model.User;
+import model.*;
 
 import java.util.Date;
 
@@ -60,6 +58,35 @@ public class Main {
 
         User userPa = new Patient("Sara", "sar@gmail.com");
         userPa.showDataUser();
+
+        //------------------------Clases Anonimas -------------------------------------------------
+
+        //Instanciar la clase abstracta User por medio de una clase anonima. Ya que una clase definica como abstrac no se puede instanciar.
+        System.out.println("----Instanciando una clase anonima");
+        User user1 = new User("Anahi", "ana@gmail.com") {
+            @Override
+            public void showDataUser() {
+                System.out.println("Doctor\nHospital: Cruz verde\n" +
+                        "Departamento: Geriatria");
+            }
+        };
+        user1.showDataUser(); //Llamada del objeto user1
+
+
+
+        // Utilizando interfaz metodo anonimo
+        /*
+        ISchedulable iSchedulable = new ISchedulable() {
+            @Override
+            public void schedule(Date date, String time) {
+
+            }
+        };
+        ISchedulable iSchedulable1 = new AppointmentDoctor();
+        iSchedulable1.schedule();
+        */
+//-------------------------------------------------------------------------
+
 
         /*// Se comento debido a que ahora traera las citas por medio del toString ya que se modifico en la clase.
         //Llamar una clase statica: contiene las citas del doctor
