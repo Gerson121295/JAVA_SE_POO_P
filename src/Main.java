@@ -1,5 +1,6 @@
 import model.Doctor;
 import model.Patient;
+import model.User;
 
 import java.util.Date;
 
@@ -52,6 +53,14 @@ public class Main {
 
         System.out.println(myDoctor);
 
+        System.out.println("\n---------------------\n");
+        //El objeto user esta = a doctor(esta adquiriendo el comportamiento del doctor). Ya que no se puede instanciar un User, porque esta definida como una clase abstract
+        User user = new Doctor("Karol", "kar@gmail.com");
+        user.showDataUser();
+
+        User userPa = new Patient("Sara", "sar@gmail.com");
+        userPa.showDataUser();
+
         /*// Se comento debido a que ahora traera las citas por medio del toString ya que se modifico en la clase.
         //Llamar una clase statica: contiene las citas del doctor
         for (model.Doctor.AvailableAppointment availableAppointment:
@@ -62,12 +71,12 @@ public class Main {
         }
         */
 
-        System.out.println("----------------------------\n\n");
 
+/*
+        System.out.println("----------------------------\n\n");
         Patient patient = new Patient("Alejandra", "ale@gmail.com");
         System.out.println(patient);// al imprimir el patient trae el toString que se definio en la clase model.User.
-
-
+*/
 
 
 

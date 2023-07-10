@@ -77,6 +77,16 @@ public class Doctor extends User {
                                 availableAppointments;
     }
 
+    //Metodo Abstracto definido en la clase abstracta User.
+    //Los metodos definidos con abstractas son obligatorios implementarlos en las clases hijas.
+    @Override
+    public void showDataUser() {
+        System.out.println("Empleado del Hospital: Cruz Roja");
+        System.out.println("Departamento: Cancerologia ");
+    }
+
+
+
     // Clase estatica: Un doctor puede tener muchas citas disponibles
     public static class AvailableAppointment{ //Available Appointment -- Cita disponible
         private int id;

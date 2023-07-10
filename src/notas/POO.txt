@@ -457,9 +457,21 @@ Clase abstracta:
 
 	public abstract class Figura{   }
 
+C23 - Miembros Abstractos
+
+Las clases abstractas por defecto siempre serán clases padres y no se podrán crear objetos.
+solamente podremos crear objeto de las clases hijos que heredan de su clase abstractas padre.
+
+//Clase abstracta:
+
+	public abstract class Figura{   
+		abstract void dibujate(); //Metodos que tengan la palabra abstract son obligatorios implementar en la clase hijas.
+		void dibujate(); //Metodos que no tengan la palabra abstract no son obligatorios implementar en la clase hijas, son opcionales.
+	}
 
 
-
+//Los metodos definidos con abstractas son obligatorios implementarlos en las clases hijas.
+   
 
 
 

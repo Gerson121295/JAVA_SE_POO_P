@@ -69,6 +69,16 @@ public class Patient extends User {
         return super.toString() + "\nAge: "+birthday+"\nWeight: "+getWeight()+
                 "\nHeight "+getHeight()+ "\nBlood "+blood;
     }
+
+    //Los metodos definidos con abstractas en la clase padre(User) son obligatorios implementarlos en las clases hijas.
+    @Override
+    public void showDataUser() {
+        System.out.println("Paciente");
+        System.out.println("Historial completo desde nacimiento");
+
+    }
+
+
 }
 
 

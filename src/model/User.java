@@ -1,6 +1,6 @@
 package model;
 
-public abstract class User { //se agrego abstract para definir User como clase abstracta
+public abstract class User { //se agrego abstract para definir User como clase abstracta, por lo que ahora no se podra crear un objeto User
     private int id;
     private String name;
     private String email;
@@ -66,6 +66,12 @@ public abstract class User { //se agrego abstract para definir User como clase a
         return "model.User: "+ name +", Email: "+email+
                 "\nAddress: "+address+". Phone: "+phoneNumber;
     }
+
+    //Definicion de un metodo Abstracto, para dar informacion de los usuarios.
+    //Los metodos definidos con abstractas son obligatorios implementarlos en las clases hijas.
+    public abstract void showDataUser(); // Solo se define la firma del metodo mas no la implementacion la implementacion se hará en la clase hija.
+
+
 }
 
 
