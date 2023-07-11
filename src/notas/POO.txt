@@ -509,6 +509,8 @@ si = permite el acceso de modificar, no= no permite el acceso de modificar
 
 C27 - Simulando Autenticacion de usuarios.
 
+C28 - Modularizando la UI de doctores.
+
 
 
 

@@ -19,7 +19,7 @@ public class UIMenu {
     //Estos meses podran ser accedidos desde cualquier lugar o clase xq esta definida como static.
     //Para declar una variable constante(su variable nunca va a cambiar) en Java se usa la palabra reservada: Final (para variables que no cambien por ejemplo los meses) public static final String[] MONTHS
     //Static le da un nivel superior de acceso al metodo.
-    public static String[] MONTHS= {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+    public static final String[] MONTHS= {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
                                      "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
 
     public static Doctor doctorLogged;
