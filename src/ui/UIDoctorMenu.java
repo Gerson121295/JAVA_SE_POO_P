@@ -1,8 +1,14 @@
 package ui;
 
+import model.Doctor;
+
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.Scanner;
 
 public class UIDoctorMenu {
+
+    public static ArrayList<Doctor> doctorsAvailableAppointments = new ArrayList<>();
 
     //Metodo para mostrar la logica de opciones para el doctor
     public static void showDoctorMenu(){
@@ -57,10 +63,26 @@ public class UIDoctorMenu {
                 //1,2,3
                 int monthSelected = response;
                 System.out.println(monthSelected + " . " + UIMenu.MONTHS[monthSelected]);
+
                 System.out.println("Insert the date available: [dd/mm/yyyy]");
                 String date = sc.nextLine();
-                System.out.println("Your date is: "+ date + "\n1. Correct \n2. Change Date");
 
+                System.out.println("Your date is: "+ date + "\n1. Correct \n2. Change Date");
+                int responseDate = Integer.valueOf(sc.nextLine());
+                if(responseDate == 2) continue; //continue no se sale del ciclo, solo evita la sigueinte linea. y continua.
+
+                    int responseTime = 0;
+                    String time = ""; //para capturar la hora
+                    do {
+                        System.out.println("Insert the time available for date: "+ date + "[16:00]");
+                        time = sc.nextLine();
+                        System.out.println("Your time is: "+time + "\n1. Correct \n2. Change time");
+                        responseTime = Integer.valueOf(sc.nextLine());
+
+                    }while (responseTime == 2);
+
+                    UIMenu.doctorLogged.addAvailableAppointment(date, time); //fecha
+                    checkDoctorAvailableAppointments(UIMenu.doctorLogged); //doctor
 
             } else if (response == 0) { // SI la dato ingresado es 0
                 showDoctorMenu();
@@ -71,5 +93,12 @@ public class UIDoctorMenu {
     }
 
 
+    //Metodo para delegar responsabilidades
+    private static void checkDoctorAvailableAppointments(Doctor doctor){
+        if (doctor.getAvailableAppointments().size() > 0
+        && !doctorsAvailableAppointments.contains(doctor)) {//Si el doctor tiene citas y el doctor no exite en esta lista.
+        doctorsAvailableAppointments.add(doctor);//añade al doctor que le estan pasando
+        }
+    }
 
 }

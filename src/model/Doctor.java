@@ -1,5 +1,7 @@
 package model;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -60,7 +62,7 @@ public class Doctor extends User {
 
     //Array de citas.
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
-    public void addAvailableAppointment(Date date, String time){ //metodo para añadir muchas citas.
+    public void addAvailableAppointment(String date, String time){ //metodo para añadir muchas citas.
         availableAppointments.add(new Doctor.AvailableAppointment(date,time));
     }
 
@@ -92,12 +94,20 @@ public class Doctor extends User {
         private int id;
         private Date date;
         private String time;
-        private String address;
-        private String phoneNumber;
+        //private String address;
+        //private String phoneNumber;
+
+        //Tenemos un string en AvailableAppointment que queremos que sea un tipo date
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy"); // Ayuda a formatear fechas, para especificar el formato de las fechas que queramos usar.ejemp: "dd/MM/yyyy", "dd-MM-yyyy", "dd/MM/yy"
 
         // Constructor
-        public AvailableAppointment(Date date, String time) {
-            this.date = date;
+        public AvailableAppointment(String date, String time) {
+            try {
+                this.date = format.parse(date);  //this.date = date:  - Agregamos nuestro SimpleDateFormat
+            } catch (ParseException e) {
+                e.printStackTrace();
+                //throw new RuntimeException(e);
+            }
             this.time = time;
         }
 
@@ -114,6 +124,11 @@ public class Doctor extends User {
 
         public Date getDate() {
             return date;
+        }
+
+        //Sobrecarga de metodo
+        public String getDate(String DATE) {
+            return format.format(date);
         }
 
         public void setDate(Date date) {
