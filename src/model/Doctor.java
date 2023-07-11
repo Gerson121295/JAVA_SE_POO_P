@@ -19,6 +19,7 @@ public class Doctor extends User {
     */
 
     private String speciality; //Atributo unico del doctor
+    private ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>(); //array de fechas disponibles
 
 
 /*// Ya no se utiliza constuctor vacio
@@ -61,7 +62,7 @@ public class Doctor extends User {
 
 
     //Array de citas.
-    ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
+
     public void addAvailableAppointment(String date, String time){ //metodo para añadir muchas citas.
         availableAppointments.add(new Doctor.AvailableAppointment(date,time));
     }
@@ -122,12 +123,12 @@ public class Doctor extends User {
             this.id = id;
         }
 
-        public Date getDate() {
+        public Date getDate(String DATE) {
             return date;
         }
 
         //Sobrecarga de metodo
-        public String getDate(String DATE) {
+        public String getDate() {
             return format.format(date);
         }
 
