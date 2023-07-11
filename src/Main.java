@@ -2,9 +2,16 @@ import model.*;
 
 import java.util.Date;
 
+import static ui.UIMenu.showMenu;
+
 public class Main {
 
     public static void main(String[] args) {
+
+
+        showMenu();
+
+
         //Creacion del objeto
          //model.Doctor= nombre de la clase
         // myDoctor = Nombre del obejto
@@ -40,8 +47,8 @@ public class Main {
         // clase y solo escribir el metodo showMenu();
          //UIMenu.showMenu(); //Sin Importar la clase, La clase no estaba dentro de la carpeta ui.
 
-        //showMenu();
 
+/*
         Doctor myDoctor = new Doctor("Anahi Salgado", "Anahi@gmail.com");
         myDoctor.addAvailableAppointment(new Date(), "4pm");
         myDoctor.addAvailableAppointment(new Date(), "10am");
@@ -59,6 +66,8 @@ public class Main {
         User userPa = new Patient("Sara", "sar@gmail.com");
         userPa.showDataUser();
 
+        */
+/*
         //------------------------Ejemplos de caso de uso de Clases Anonimas -------------------------------------------------
 
         //Instanciar la clase abstracta User por medio de una clase anonima. Ya que una clase definica como abstrac no se puede instanciar.
@@ -75,7 +84,7 @@ public class Main {
 
 
         // Utilizando interfaz metodo anonimo
-        /*
+
         ISchedulable iSchedulable = new ISchedulable() {
             @Override
             public void schedule(Date date, String time) {

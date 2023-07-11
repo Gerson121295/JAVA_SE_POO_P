@@ -30,12 +30,12 @@ public class Doctor extends User {
     public Doctor(String name, String email){ //Opcional agregarle un parametro
         super(name, email); //Super hace referencia a la clase padre,
 
-        System.out.println("El nombre del doctor asignado es: "+name);
+     //   System.out.println("El nombre del doctor asignado es: "+name);
        // id++; // aumenta el id del doctor al crear un constructor. // ya no se necesita se realizará por medio de una BD el aumento del id.
 
         //this hace referencia a los elementos de la clase
         //this.name = name; //este es igual al nombre de la variable del constructor model.Doctor. // ya esta name definido en esta clase por lo que no se usa.
-        this.speciality = speciality;
+      //  this.speciality = speciality;
     }
 
     //Getters and Setters
